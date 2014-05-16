@@ -31,6 +31,7 @@
         android:layout_below="@+id/timePicker1"
         android:text="@string/hello_world" />
 
+     <!-- testing git now -->
      <ExitText
          android:id="@+id/editText"
          android:layout_width="wrap_content"
