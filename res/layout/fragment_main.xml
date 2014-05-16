@@ -5,24 +5,33 @@
     tools:context="com.WMU.wakemeup.MainActivity$PlaceholderFragment" >
 
      <TimePicker
-         android:id="@+id/timePicker1"
+         android:id="@+id/timePicker"
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
          android:background="#383838"/>
 
      <TextView
-        android:id="@+id/textView1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/timePicker1"
-        android:layout_below="@+id/timePicker1"
-        android:text="@string/Alarm_name" />
+         android:id="@+id/alarmName"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/timePicker"
+         android:text="@string/Alarm_name" />
 
      <EditText android:id="@+id/edit_message"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/alarmName"
         android:background="#CCCCCC"
+        android:textSize="30sp"
         android:hint="@string/edit_message" />
-
+     
+     <TextView
+         android:id="@+id/repeatDays"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/edit_message"
+         android:text="@string/repeatDays" />
+     
 </RelativeLayout>
