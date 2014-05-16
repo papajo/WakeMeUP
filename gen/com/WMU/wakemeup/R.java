@@ -1204,6 +1204,7 @@ containing a value of this type.
         public static final int main=0x7f0c0000;
     }
     public static final class string {
+        public static final int Alarm_name=0x7f0a000e;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abc_action_bar_home_description=0x7f0a0001;
@@ -1247,7 +1248,6 @@ containing a value of this type.
         public static final int action_settings=0x7f0a000f;
         public static final int app_name=0x7f0a000d;
         public static final int editText=0x7f0a0010;
-        public static final int hello_world=0x7f0a000e;
     }
     public static final class style {
         /** 
