@@ -1,12 +1,28 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+ <ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+<RelativeLayout 
+    
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    tools:context="com.WMU.wakemeup.MainActivity$PlaceholderFragment" >
-
+    android:layout_height="wrap_content"
+    
+    >
+<!--tools:context="com.WMU.wakemeup.MainActivity$PlaceholderFragment" 
+     -->
+<!-- xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     
+     Well.... this didn't want to be where it was when scrollview appeared..
+     Better save it here..
+     
+     -->
 <!-- This view must be called from options menu, when i chose add there is 
 no add yet, so i will leave this for now... but it must be changed asap -->
    
+    
+    <!-- Here you put the rest of your current view-->
+
      <TimePicker
          android:id="@+id/timePicker"
          android:layout_width="fill_parent"
@@ -131,4 +147,6 @@ no add yet, so i will leave this for now... but it must be changed asap -->
 	    android:layout_marginRight="10dp"
 	    android:text="@string/cancel" />
 
+
 </RelativeLayout>
+</ScrollView>
