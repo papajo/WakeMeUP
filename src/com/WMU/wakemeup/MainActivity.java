@@ -25,7 +25,7 @@ public class MainActivity extends ActionBarActivity {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
-            //adds fragment main when placeholderfragment is called
+            //adds fragment_main when placeholderfragment is called
         }
       
     }
@@ -64,7 +64,7 @@ public class MainActivity extends ActionBarActivity {
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
             return rootView;
-        //adds fragment main to activity main view
+            //adds fragment main to activity main view
             // now this must be called from options menu, when i chose add
             //there is no add yet, so i will leave this for now... but it must
             //be changed asap

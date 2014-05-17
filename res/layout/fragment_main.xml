@@ -16,12 +16,12 @@ no add yet, so i will leave this for now... but it must be changed asap -->
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
          android:background="#383838"/>
+
 <ScrollView 
         android:layout_width="match_parent"
         android:layout_height="0dp" 
         android:layout_weight="1"
         android:layout_gravity="center"
-       
         android:fillViewport="true"
         >
 
@@ -34,7 +34,6 @@ no add yet, so i will leave this for now... but it must be changed asap -->
          android:id="@+id/alarmName"
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
-         
          android:paddingLeft="10dp"
          android:text="@string/Alarm_name" />
 
