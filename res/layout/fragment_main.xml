@@ -1,22 +1,10 @@
- <ScrollView
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="fill_parent"
-  android:layout_height="fill_parent">
-<RelativeLayout 
-    
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    
-    >
-<!--tools:context="com.WMU.wakemeup.MainActivity$PlaceholderFragment" 
-     -->
-<!-- xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-     
-     Well.... this didn't want to be where it was when scrollview appeared..
-     Better save it here..
-     
-     -->
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.WMU.wakemeup.MainActivity$PlaceholderFragment" >
+
 <!-- This view must be called from options menu, when i chose add there is 
 no add yet, so i will leave this for now... but it must be changed asap -->
    
@@ -28,12 +16,25 @@ no add yet, so i will leave this for now... but it must be changed asap -->
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
          android:background="#383838"/>
+<ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+        android:layout_gravity="center"
+       
+        android:fillViewport="true"
+        >
 
+        <RelativeLayout 
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+            >
       <TextView
          android:id="@+id/alarmName"
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
-         android:layout_below="@+id/timePicker"
+         
          android:paddingLeft="10dp"
          android:text="@string/Alarm_name" />
 
@@ -137,16 +138,18 @@ no add yet, so i will leave this for now... but it must be changed asap -->
 	    android:text="@string/save" />
 
 <!-- Need to write onClick code for this -->
+
 	<Button
 	    android:id="@+id/cancel"
 	    android:layout_width="150dp"
 	    android:layout_height="wrap_content"
-	    android:layout_alignBaseline="@+id/save"
-	    android:layout_alignBottom="@+id/save"
 	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/signal"
+	    android:layout_gravity="top|right"
 	    android:layout_marginRight="10dp"
 	    android:text="@string/cancel" />
 
-
 </RelativeLayout>
-</ScrollView>
+    </ScrollView>
+
+</LinearLayout>
