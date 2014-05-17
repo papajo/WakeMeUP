@@ -3,7 +3,18 @@
 
     <string name="app_name">Wake Me UP</string>
     <string name="Alarm_name">Alarm name:</string>
+    <string name="save">Save</string>
     <string name="action_settings">Settings</string>
-    <string name="edit_message">Edit alarm name</string>
-    <string name="repeatDays">Chose when to repeat alarm</string>
+    <string name="edit_message">Wake up</string>
+    <string name="choseDays">Chose when to repeat alarm</string>
+    <string name="CheckTime">Check time</string>
+    <string name="repeatDays">None</string>
+    <string name="choseTask">Chose which task will appear</string>
+    <string name="task">None</string>
+    <string name="choseDif">Chose how difficult will be task</string>
+    <string name="dif">None</string>
+    <string name="choseSignal">Chose which signal will be played</string>
+    <string name="signal">None</string>
+    
+    <string name="cancel">Cancel</string>
 </resources>

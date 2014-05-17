@@ -4,34 +4,131 @@
     android:layout_height="fill_parent"
     tools:context="com.WMU.wakemeup.MainActivity$PlaceholderFragment" >
 
+<!-- This view must be called from options menu, when i chose add there is 
+no add yet, so i will leave this for now... but it must be changed asap -->
+   
      <TimePicker
          android:id="@+id/timePicker"
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
          android:background="#383838"/>
 
-     <TextView
+      <TextView
          android:id="@+id/alarmName"
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
-         android:layout_alignParentLeft="true"
          android:layout_below="@+id/timePicker"
+         android:paddingLeft="10dp"
          android:text="@string/Alarm_name" />
 
-     <EditText android:id="@+id/edit_message"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/alarmName"
-        android:background="#CCCCCC"
-        android:textSize="30sp"
-        android:hint="@string/edit_message" />
+<!-- Need to write onClick code for this -->
+		     <EditText android:id="@+id/edit_message"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/alarmName"
+		        android:background="#CCCCCC"
+		        android:textSize="30sp"
+		        android:paddingLeft="15dp"
+		        android:hint="@string/edit_message" />
      
      <TextView
-         android:id="@+id/repeatDays"
+         android:id="@+id/repeatDaystxt"
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
          android:layout_alignParentLeft="true"
          android:layout_below="@+id/edit_message"
-         android:text="@string/repeatDays" />
+         android:paddingLeft="10dp"
+         android:text="@string/choseDays" />
+
+<!-- Need to write onClick code for this -->
+		     <EditText
+		         android:id="@+id/repeatDays"
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:layout_alignParentLeft="true"
+		         android:layout_centerVertical="true"
+		         android:background="#CCCCCC"
+		         android:layout_below="@+id/repeatDaystxt"
+		         android:paddingLeft="15dp"
+		         android:hint="@string/repeatDays"
+		         android:textSize="20sp" />
+
+     <TextView
+         android:id="@+id/taskTxt"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/repeatDays"
+         android:paddingLeft="10dp"
+         android:text="@string/choseTask" />
+
+<!-- Need to write onClick code for this -->
+		     <EditText
+		         android:id="@+id/task"
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:background="#CCCCCC"
+		         android:layout_below="@+id/taskTxt"
+		         android:paddingLeft="15dp"
+		         android:hint="@string/task"
+		         android:textSize="20sp" />
      
+     <TextView
+         android:id="@+id/choseDif"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/task"
+         android:paddingLeft="10dp"
+         android:text="@string/choseDif" />
+
+<!-- Need to write onClick code for this -->
+		     <EditText
+		         android:id="@+id/dif"
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:background="#CCCCCC"
+		         android:layout_below="@+id/choseDif"
+		         android:paddingLeft="15dp"
+		         android:hint="@string/dif"
+		         android:textSize="20sp" />
+     
+     <TextView
+         android:id="@+id/choseSignal"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/dif"
+         android:paddingLeft="10dp"
+         android:text="@string/choseSignal" />
+
+<!-- Need to write onClick code for this -->
+		     <EditText
+		         android:id="@+id/signal"
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:background="#CCCCCC"
+		         android:layout_below="@+id/choseSignal"
+		         android:paddingLeft="15dp"
+		         android:hint="@string/signal"
+		         android:textSize="20sp" />
+
+<!-- Need to write onClick code for this -->
+	<Button
+	    android:id="@+id/save"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/signal"
+	    android:layout_marginLeft="10dp"
+	    android:text="@string/save" />
+
+<!-- Need to write onClick code for this -->
+	<Button
+	    android:id="@+id/cancel"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/save"
+	    android:layout_alignBottom="@+id/save"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp"
+	    android:text="@string/cancel" />
+
 </RelativeLayout>
