@@ -1,12 +1,27 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
+         android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical"
-    tools:context="com.WMU.wakemeup.MainActivity$PlaceholderFragment" >
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:fillViewport="true"
+        tools:context="com.WMU.wakemeup.MainActivity$PlaceholderFragment"
+        >
+
+<RelativeLayout 
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+            >
 
 <!-- This view must be called from options menu, when i chose add there is 
-no add yet, so i will leave this for now... but it must be changed asap -->
+no add yet, so i will leave this for now... but it must be changed asap 
+
+I might need to change scrollview, and set it to all view not only part of it
+that might be better
+
+-->
    
     
     <!-- Here you put the rest of your current view-->
@@ -17,23 +32,14 @@ no add yet, so i will leave this for now... but it must be changed asap -->
          android:layout_height="wrap_content"
          android:background="#383838"/>
 
-<ScrollView 
-        android:layout_width="match_parent"
-        android:layout_height="0dp" 
-        android:layout_weight="1"
-        android:layout_gravity="center"
-        android:fillViewport="true"
-        >
 
-        <RelativeLayout 
-            android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-            >
+
+        
       <TextView
          android:id="@+id/alarmName"
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
+         android:layout_below="@+id/timePicker"
          android:paddingLeft="10dp"
          android:text="@string/Alarm_name" />
 
@@ -150,5 +156,3 @@ no add yet, so i will leave this for now... but it must be changed asap -->
 
 </RelativeLayout>
     </ScrollView>
-
-</LinearLayout>

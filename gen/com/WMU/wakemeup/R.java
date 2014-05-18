@@ -1080,6 +1080,7 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020057;
     }
     public static final class id {
+        public static final int action_add=0x7f05004b;
         public static final int action_bar=0x7f05001c;
         public static final int action_bar_activity_content=0x7f050015;
         public static final int action_bar_container=0x7f05001b;
@@ -1220,7 +1221,7 @@ containing a value of this type.
     }
     public static final class string {
         public static final int Alarm_name=0x7f0a000e;
-        public static final int CheckTime=0x7f0a0013;
+        public static final int CheckTime=0x7f0a0014;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abc_action_bar_home_description=0x7f0a0001;
@@ -1261,19 +1262,20 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
+        public static final int action_add=0x7f0a0011;
         public static final int action_settings=0x7f0a0010;
         public static final int app_name=0x7f0a000d;
-        public static final int cancel=0x7f0a001b;
-        public static final int choseDays=0x7f0a0012;
-        public static final int choseDif=0x7f0a0017;
-        public static final int choseSignal=0x7f0a0019;
-        public static final int choseTask=0x7f0a0015;
-        public static final int dif=0x7f0a0018;
-        public static final int edit_message=0x7f0a0011;
-        public static final int repeatDays=0x7f0a0014;
+        public static final int cancel=0x7f0a001c;
+        public static final int choseDays=0x7f0a0013;
+        public static final int choseDif=0x7f0a0018;
+        public static final int choseSignal=0x7f0a001a;
+        public static final int choseTask=0x7f0a0016;
+        public static final int dif=0x7f0a0019;
+        public static final int edit_message=0x7f0a0012;
+        public static final int repeatDays=0x7f0a0015;
         public static final int save=0x7f0a000f;
-        public static final int signal=0x7f0a001a;
-        public static final int task=0x7f0a0016;
+        public static final int signal=0x7f0a001b;
+        public static final int task=0x7f0a0017;
     }
     public static final class style {
         /** 

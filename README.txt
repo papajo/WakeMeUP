@@ -41,5 +41,21 @@ App skati
 
 	- modinātājs ir klusajā režīmā - checked/unchecked
 	- modinātāja skaļums - popup, scrollbar, cancel/ok
-	- snooze length - listview popup, cancel
+	- snooze length - listview popup, cancel 
 	- sānu pogas darbība - listview popup, cancel
+
+
+
+
+	http://developer.android.com/training/basics/firstapp/starting-activity.html
+
+	no šitā varētu smelties idejas kā atvērt citus skatus un tādas lietas, vai kā viņus ģenerēt pēc vajadzības, jo tur rodas skats ar to textview pēc pogas nospiešanas, man pēc pogas nospiešanas datu pārbaudes dēļ vispirms vajadzētu tāda veida skatu, realitātē pēc pogas nospiešanas vajag izveidot servisu un kaut kāds redirect or smth jātaisa uz main activity skatu, kur arī jābūt ir modinātāju uzskaitījumam, kas ir servisos or smth. šito jāizpēta kā reāli taisa. noteikti būs telefona iekšējā datu bāze jāizmanto datu glabāšanai
+
+
+
+
+
+	datu bāzes saturs iespējamais
+		- modinātāji
+		- uzdevumi, to tipi un sarežģītība
+		- skaņas ( vai arī šis tiek ņemts pa taisno no konkrētas db, lai nedublētu datus )
