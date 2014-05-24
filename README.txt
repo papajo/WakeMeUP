@@ -59,3 +59,7 @@ App skati
 		- modinātāji
 		- uzdevumi, to tipi un sarežģītība
 		- skaņas ( vai arī šis tiek ņemts pa taisno no konkrētas db, lai nedublētu datus )
+
+
+
+Izskatās, ka jāizmanto Action_show_alarms, lai dabūtu to pirmo skatu, tas arī ir pats pamats! Nav speciāli cits skats jāveido ar xml, tas viss radīsies no javas
