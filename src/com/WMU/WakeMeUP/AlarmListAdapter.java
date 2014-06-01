@@ -1,4 +1,4 @@
-package com.trigg.alarmclock;
+package com.WMU.WakeMeUP;
 
 import java.util.List;
 
